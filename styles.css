@@ -230,12 +230,16 @@ nav a {
     color: var(--web-acc-black);
     display: flex;
     align-items: center;
-    padding: 4px 0;
-    gap: 10px;
-    transition: color 0.3s ease;
+    padding: 8px 12px;
+    gap: 12px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
 }
 nav a:hover {
     color: var(--pf-mid-green);
+    background-color: var(--web-acc-white);
+    border-color: var(--web-acc-light-gray);
 }
 
 nav h4 {
@@ -244,11 +248,18 @@ nav h4 {
     font-size: larger;
     display: flex;
     justify-content: space-between;
+    padding: 8px 12px;
+    gap: 12px;
     cursor: pointer;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
 }
 nav h4:hover {
     color: var(--pf-mid-green);
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: var(--web-acc-white);
+    border-color: var(--web-acc-white);
 }
 
 .material-symbols-outlined {
@@ -262,7 +273,7 @@ nav h4:hover {
     transition: transform 0.3s ease;
     margin-left: 10px;
     color: var(--web-acc-black);
-    font-size: 12px;
+    font-size: 14px;
 }
 .rotate-arrow {
     transform: rotate(90deg);
@@ -293,7 +304,34 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
+.dash-header-title-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.website-selection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
+    width: 300px;
+}
+select#website-choice {
+    padding: 6px 12px;
+    border: 1px solid var(--web-acc-dark-gray);
+    border-radius: 4px;
+    background-color: var(--web-acc-white);
+    color: var(--web-acc-black);
+    font-size: 16px;
+    cursor: pointer;
+}
+select#website-choice:hover {
+    border-color: var(--pf-main-purple);
+}
+
 .view-store-btn {
     background-color: var(--pf-mid-green);
     color: var(--web-acc-white);
@@ -332,10 +370,13 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 .stat-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    text-align: center;
     font-size: 15px;
     color: var(--web-acc-black);
 }
@@ -359,11 +400,11 @@ main {
 }
 .preview-image {
     background-color: var(--pf-main-purple);
-    padding: 40px;
+    padding: 40px 20px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 .theme-footer {
     display: flex;
